@@ -141,10 +141,10 @@ if __name__ == "__main__":
                 'no_pages': pages,
                 'patient_name': patientName,
                 'patient_dob': patientDOB,
-                'date_bottom': dateBottom,
+                'date_bottom': date.today().strftime('%m/%d/%Y'),
                 'physician_surname': physicianSurname,
                 'file_name': fileName,
-                'date_file': date.today().strftime('%m/%d/%Y')
+                'date_file': dateBottom 
             }
 
             try:
